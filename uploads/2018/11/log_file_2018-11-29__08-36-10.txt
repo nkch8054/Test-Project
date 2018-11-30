@@ -1,0 +1,45 @@
+
+---Downloaded files---
+The import files for: Demo1 were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/iimranchi
+Data file = D:\wamp64\www\iimranchi/wp-content/uploads/2018/11/demo-content-import-file_2018-11-29__08-36-10.xml
+Widget file = not defined!
+Customizer file = D:\wamp64\www\iimranchi/wp-content/uploads/2018/11/demo-customizer-import-file_2018-11-29__08-36-10.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing customizer settings---
+Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.
+
+---pt-ocdi/after_import---
+

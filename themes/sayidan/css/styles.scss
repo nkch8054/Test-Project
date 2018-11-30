@@ -1,0 +1,64 @@
+$color-theme: #f7ca18;
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.otf");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.otf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.otf");
+}
+@mixin transition($minute){
+  -moz-transition: all $minute  ease-in-out 0s;
+  -webkit-transition: all $minute ease-in-out 0s;
+  -ms-transition: all $minute ease-in-out 0s;
+  -o-transition: all $minute ease-in-out 0s;
+  transition: all $minute ease-in-out 0s;
+}
+@mixin transform($values){
+  -ms-transform: rotate($values);
+  -webkit-transform: rotate($values);
+  transform: rotate($values);
+}
+
+@mixin tfs-fade($minute) {
+  -webkit-transition: all $minute ease-out;
+  -moz-transition: all $minute ease-out;
+  transition: all $minute ease-out;
+}
+
+@mixin border_radius($border){
+  -moz-border-radius: $border;
+  -webkit-border-radius: $border;
+  border-radius: $border;
+}
+@mixin box-sizing{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin animation ($animation, $minute){
+  animation-name: $animation;
+  -webkit-animation-duration: $minute;
+  animation-duration: $minute;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@mixin box-shadow ($value) {
+  -webkit-box-shadow: $value;
+  -ms-box-shadow: $value;
+  -o-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin transform-scale($value){
+  transform: scale($value);
+  -moz-transform: scale($value);
+  -webkit-transform: scale($value);
+  -o-transform: scale($value);
+  -ms-transform: scale($value);
+}
