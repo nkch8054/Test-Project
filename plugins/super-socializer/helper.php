@@ -560,7 +560,10 @@ function the_champ_account_linking(){
                         }
                         $icons_container = '<div class="the_champ_login_container">';
                         if(isset($theChampLoginOptions['gdpr_enable'])){
-							$icons_container .= '<div class="heateor_ss_sl_optin_container"><label><input type="checkbox" class="heateor_ss_social_login_optin" value="1" />'. str_replace($theChampLoginOptions['ppu_placeholder'], '<a href="'. $theChampLoginOptions['privacy_policy_url'] .'" target="_blank">'. $theChampLoginOptions['ppu_placeholder'] .'</a>', wp_strip_all_tags($theChampLoginOptions['privacy_policy_optin_text'])) .'</label></div>';
+							$gdprOptIn = '<div class="heateor_ss_sl_optin_container"><label><input type="checkbox" class="heateor_ss_social_login_optin" value="1" />'. str_replace($theChampLoginOptions['ppu_placeholder'], '<a href="'. $theChampLoginOptions['privacy_policy_url'] .'" target="_blank">'. $theChampLoginOptions['ppu_placeholder'] .'</a>', wp_strip_all_tags($theChampLoginOptions['privacy_policy_optin_text'])) .'</label></div>';
+						}
+						if(isset($theChampLoginOptions['gdpr_enable']) && $theChampLoginOptions['gdpr_placement'] == 'above'){
+							$icons_container .= $gdprOptIn;
 						}
                         $icons_container .= '<ul class="the_champ_login_ul">';
 						$existingProviders = array();
@@ -602,7 +605,12 @@ function the_champ_account_linking(){
 								}
 								$icons_container .= '<div class="theChampLoginSvg theChamp'. ucfirst($provider) .'LoginSvg"></div></i></li>';
 							}
-							$icons_container .= '</ul></div>';
+							$icons_container .= '</ul>';
+							if(isset($theChampLoginOptions['gdpr_enable']) && $theChampLoginOptions['gdpr_placement'] == 'below'){
+								$icons_container .= '<div style="clear:both"></div>';
+								$icons_container .= $gdprOptIn;
+							}
+							$icons_container .= '</div>';
 							$html .= $icons_container;
 	                        $html .= '</td>
 	                        </tr>';

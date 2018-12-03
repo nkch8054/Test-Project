@@ -1034,6 +1034,26 @@
 						<tbody id="the_champ_gdpr_options" <?php echo !isset($theChampLoginOptions['gdpr_enable']) ? 'style = "display: none"' : '';?> >
 							<tr>
 								<th>
+								<img id="the_champ_gdpr_placement_help" class="the_champ_help_bubble" src="<?php echo plugins_url( '../images/info.png', __FILE__ ) ?>" />
+								<label for="the_champ_gdpr_placement_above"><?php _e( "Placement of GDPR opt-in", 'super-socializer' ); ?></label>
+								</th>
+								<td>
+								<input id="the_champ_gdpr_placement_above" name="the_champ_login[gdpr_placement]" type="radio" <?php echo ! isset( $theChampLoginOptions['gdpr_placement'] ) || $theChampLoginOptions['gdpr_placement'] == 'above' ? 'checked = "checked"' : '';?> value="above" />
+								<label for="the_champ_gdpr_placement_above"><?php _e( 'Above Social Login icons', 'super-socializer' ) ?></label><br/>
+								<input id="the_champ_gdpr_placement_below" name="the_champ_login[gdpr_placement]" type="radio" <?php echo $theChampLoginOptions['gdpr_placement'] == 'below' ? 'checked = "checked"' : '';?> value="below" />
+								<label for="the_champ_gdpr_placement_below"><?php _e( 'Below Social Login icons', 'super-socializer' ) ?></label>
+								</td>
+							</tr>
+							<tr class="the_champ_help_content" id="the_champ_gdpr_placement_help_cont">
+								<td colspan="2">
+								<div>
+								<?php _e( 'Placement of GDPR opt-in above or below the social login icons', 'super-socializer' ) ?>
+								</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th>
 								<img id="the_champ_privacy_policy_optin_text_help" class="the_champ_help_bubble" src="<?php echo plugins_url('../images/info.png', __FILE__) ?>" />
 								<label for="the_champ_privacy_policy_optin_text"><?php _e("Opt-in text", 'super-socializer'); ?></label>
 								</th>
@@ -1045,7 +1065,7 @@
 							<tr class="the_champ_help_content" id="the_champ_privacy_policy_optin_text_help_cont">
 								<td colspan="2">
 								<div>
-								<?php _e('Text for the opt-in appearing above the social login icons', 'super-socializer') ?>
+								<?php _e('Text for the GDPR opt-in', 'super-socializer') ?>
 								</div>
 								</td>
 							</tr>

@@ -3,7 +3,7 @@
 Plugin Name: Super Socializer
 Plugin URI: https://super-socializer-wordpress.heateor.com
 Description: A complete 360 degree solution to provide all the social features like Social Login, Social Commenting, Social Sharing, Social Media follow and more.
-Version: 7.12.4
+Version: 7.12.5
 Author: Team Heateor
 Author URI: https://www.heateor.com
 Text Domain: super-socializer
@@ -11,7 +11,7 @@ Domain Path: /languages
 License: GPL2+
 */
 defined('ABSPATH') or die("Cheating........Uh!!");
-define('THE_CHAMP_SS_VERSION', '7.12.4');
+define('THE_CHAMP_SS_VERSION', '7.12.5');
 
 require 'helper.php';
 
@@ -1400,6 +1400,7 @@ function the_champ_save_default_options(){
 	   'scl_title' => __('Link your social account to login to your account at this website', 'super-socializer'),
 	   'link_account' => 1,
 	   'gdpr_enable' => 1,
+	   'gdpr_placement' => 'above',
 	   'privacy_policy_url' => '',
 	   'privacy_policy_optin_text' => 'I agree to my personal data being stored and used as per Privacy Policy',
 	   'ppu_placeholder' => 'Privacy Policy'
@@ -1639,7 +1640,7 @@ function the_champ_addon_update_notification(){
 			<?php
 		}
 
-		if(defined('HEATEOR_SOCIAL_LOGIN_BUTTONS_VERSION') && version_compare('1.1.2', HEATEOR_SOCIAL_LOGIN_BUTTONS_VERSION) > 0){
+		if(defined('HEATEOR_SOCIAL_LOGIN_BUTTONS_VERSION') && version_compare('1.1.4', HEATEOR_SOCIAL_LOGIN_BUTTONS_VERSION) > 0){
 			?>
 			<div class="error notice">
 				<h3>Social Login Buttons</h3>
@@ -1921,6 +1922,12 @@ function the_champ_update_db_check(){
 	$currentVersion = get_option('the_champ_ss_version');
 
 	if($currentVersion && $currentVersion != THE_CHAMP_SS_VERSION){
+		if(version_compare("7.12.5", $currentVersion) > 0){
+			global $theChampLoginOptions;
+			$theChampLoginOptions['gdpr_placement'] = 'above';
+			update_option('the_champ_login', $theChampLoginOptions);
+		}
+
 		if(version_compare("7.12.1", $currentVersion) > 0){
 			global $theChampSharingOptions;
 			$theChampSharingOptions['tweet_count_service'] = 'opensharecount';

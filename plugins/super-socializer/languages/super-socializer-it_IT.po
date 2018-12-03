@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Super Socializer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-27 13:18+0530\n"
-"PO-Revision-Date: 2018-11-27 13:18+0530\n"
+"POT-Creation-Date: 2018-12-01 11:43+0530\n"
+"PO-Revision-Date: 2018-12-01 11:43+0530\n"
 "Last-Translator: Team Heateor <hello@heateor.com>\n"
 "Language-Team: Freedom's Gate <freedomsgate.tk@gmail.com>\n"
 "Language: it\n"
@@ -71,7 +71,7 @@ msgid ""
 "Make sure that \"Enable Callback Locking\" option is disabled. See step 4 %s"
 msgstr ""
 
-#: ../super_socializer.php:872 ../helper.php:968
+#: ../super_socializer.php:872 ../helper.php:975
 msgid "Please verify your email address to login."
 msgstr "Per favore, per accedere verifica il tuo indirizzo e-mail."
 
@@ -125,7 +125,7 @@ msgstr "Super Socializer - Opzioni"
 msgid "General Options"
 msgstr "Opzioni Generali"
 
-#: ../super_socializer.php:1296 ../helper.php:890
+#: ../super_socializer.php:1296 ../helper.php:897
 msgid "Social Avatar"
 msgstr "Social Avatar"
 
@@ -137,7 +137,7 @@ msgstr "Url Avatar Piccolo"
 msgid "Large Avatar Url"
 msgstr "URL Avatar Grande"
 
-#: ../super_socializer.php:1307 ../helper.php:893
+#: ../super_socializer.php:1307 ../helper.php:900
 msgid ""
 "Do not fetch and update social avatar from my profile, next time I Social "
 "Login"
@@ -145,11 +145,11 @@ msgstr ""
 "La prossima volta che uso Social Login, non prendere e/o aggiornare il "
 "social avatar dal mio profilo."
 
-#: ../super_socializer.php:1311 ../helper.php:894
+#: ../super_socializer.php:1311 ../helper.php:901
 msgid "Update social avatar, next time I Social Login"
 msgstr "La prossima volta che si usa Social Login, aggiorna il social avatar."
 
-#: ../super_socializer.php:1384 ../super_socializer.php:2009
+#: ../super_socializer.php:1384 ../super_socializer.php:2016
 msgid ""
 "Your browser is blocking some features of this website. Please follow the "
 "instructions at {support_url} to unblock these."
@@ -169,60 +169,60 @@ msgstr ""
 "Si prega di inserire un indirizzo email valido. Potrebbe esserne richiesta "
 "una verifica"
 
-#: ../super_socializer.php:1400 ../super_socializer.php:1933
+#: ../super_socializer.php:1400 ../super_socializer.php:1940
 msgid "Link your social account to login to your account at this website"
 msgstr ""
 "Collega il tuo social account per accedere al tuo account su questo sito"
 
-#: ../super_socializer.php:1628
+#: ../super_socializer.php:1629
 msgid ""
 "Update \"Facebook Comments Moderation\" add-on for compatibility with "
 "current version of Super Socialzer"
 msgstr ""
 
-#: ../super_socializer.php:1637
+#: ../super_socializer.php:1638
 msgid ""
 "Update \"Facebook Comments Notifier\" add-on for compatibility with current "
 "version of Super Socialzer"
 msgstr ""
 
-#: ../super_socializer.php:1646
+#: ../super_socializer.php:1647
 msgid ""
 "Update \"Social Login Buttons\" add-on for compatibility with current "
 "version of Super Socialzer"
 msgstr ""
 
-#: ../super_socializer.php:1655
+#: ../super_socializer.php:1656
 msgid ""
 "Update \"Social Share myCRED Integration\" add-on for maximum compatibility "
 "with current version of Super Socialzer"
 msgstr ""
 
-#: ../super_socializer.php:1664
+#: ../super_socializer.php:1665
 msgid ""
 "Update \"Social Login myCRED Integration\" add-on for maximum compatibility "
 "with current version of Super Socialzer"
 msgstr ""
 
-#: ../super_socializer.php:1671
+#: ../super_socializer.php:1672
 msgid ""
 "Update \"Social Login myCRED Integration\" add-on for compatibility with "
 "LiveJournal Login of Super Socialzer"
 msgstr ""
 
-#: ../super_socializer.php:1682
+#: ../super_socializer.php:1683
 #, php-format
 msgid ""
 "To continue using Steam login save Steam API key <a href=\"%s\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1698
+#: ../super_socializer.php:1699
 #, php-format
 msgid ""
 "To continue using Social Login, save the secret keys <a href=\"%s\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1722
+#: ../super_socializer.php:1723
 #, php-format
 msgid ""
 "Add %s in \"Valid OAuth redirect URIs\" option in your Facebook app settings "
@@ -230,14 +230,14 @@ msgid ""
 "target=\"_blank\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1722 ../super_socializer.php:1747
-#: ../super_socializer.php:1772 ../super_socializer.php:1797
-#: ../super_socializer.php:1830 ../super_socializer.php:1858
-#: ../super_socializer.php:1885 ../super_socializer.php:1909
+#: ../super_socializer.php:1723 ../super_socializer.php:1748
+#: ../super_socializer.php:1773 ../super_socializer.php:1798
+#: ../super_socializer.php:1831 ../super_socializer.php:1859
+#: ../super_socializer.php:1886 ../super_socializer.php:1910
 msgid "Okay"
 msgstr ""
 
-#: ../super_socializer.php:1747
+#: ../super_socializer.php:1748
 #, php-format
 msgid ""
 "Add %s in \"Callback URLs\" option in your Twitter app settings for Twitter "
@@ -245,7 +245,7 @@ msgid ""
 "\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1772
+#: ../super_socializer.php:1773
 #, php-format
 msgid ""
 "Add %s in \"Authorized Redirect URLs\" option in your Linkedin app settings "
@@ -253,7 +253,7 @@ msgid ""
 "target=\"_blank\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1797
+#: ../super_socializer.php:1798
 #, php-format
 msgid ""
 "Add %s in \"Authorized redirect URIs\" option in your Google client settings "
@@ -261,13 +261,13 @@ msgid ""
 "target=\"_blank\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1808
+#: ../super_socializer.php:1809
 #, php-format
 msgid ""
 "Save the url of privacy policy page of your website <a href=\"%s\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1830
+#: ../super_socializer.php:1831
 #, php-format
 msgid ""
 "This plugin is GDPR compliant. You need to update the privacy policy of your "
@@ -275,7 +275,7 @@ msgid ""
 "\"%s\" target=\"_blank\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1858
+#: ../super_socializer.php:1859
 #, php-format
 msgid ""
 "Now plugin supports a new service Twitcount.com to show Twitter shares. To "
@@ -284,7 +284,7 @@ msgid ""
 "your website %s with them. No need to copy-paste any code from their website."
 msgstr ""
 
-#: ../super_socializer.php:1885
+#: ../super_socializer.php:1886
 #, php-format
 msgid ""
 "Replace url saved in \"Callback URLs\" option in your Twitter app settings "
@@ -292,7 +292,7 @@ msgid ""
 "\"%s\" target=\"_blank\">here</a>"
 msgstr ""
 
-#: ../super_socializer.php:1909
+#: ../super_socializer.php:1910
 #, php-format
 msgid ""
 "Your website visitors will see a popup notification (only once) if their "
@@ -339,82 +339,82 @@ msgstr "Account collegato correttamente"
 msgid "Account already exists or linked"
 msgstr "Account esistente o già collegato"
 
-#: ../helper.php:619 ../helper.php:625
+#: ../helper.php:626 ../helper.php:632
 msgid "Currently"
 msgstr "Attualmente"
 
-#: ../helper.php:619 ../helper.php:625
+#: ../helper.php:626 ../helper.php:632
 msgid "Connected with"
 msgstr "Connesso con"
 
-#: ../helper.php:619 ../helper.php:625
+#: ../helper.php:626 ../helper.php:632
 msgid "Remove"
 msgstr "rimuovere"
 
-#: ../helper.php:696
+#: ../helper.php:703
 msgid "Social Account Linking"
 msgstr "Collegamento Social Account"
 
-#: ../helper.php:746
+#: ../helper.php:753
 msgid "Disable Standard Social Sharing on this "
 msgstr "Disabilita i pulsanti Floating Social Sharing su questo"
 
-#: ../helper.php:751
+#: ../helper.php:758
 msgid "Disable Floating Social Sharing on this "
 msgstr "Disabilita i pulsanti Floating Social Sharing su questo"
 
-#: ../helper.php:756
+#: ../helper.php:763
 msgid "Disable Standard like buttons on this "
 msgstr "Disabilita i pulsanti Standard Mi-piace su questo"
 
-#: ../helper.php:761
+#: ../helper.php:768
 msgid "Disable Floating like buttons on this "
 msgstr "Disabilita i pulsanti Floating Mi-piace su questo"
 
-#: ../helper.php:766
+#: ../helper.php:773
 msgid "Disable Social Commenting on this "
 msgstr "Disabilita Social Commenting"
 
-#: ../helper.php:775
+#: ../helper.php:782
 msgid "Standard Sharing Interface"
 msgstr "Interfaccia Sharing Standard"
 
-#: ../helper.php:781 ../helper.php:800
+#: ../helper.php:788 ../helper.php:807
 msgid "Starting share count for "
 msgstr "Avvio share count per"
 
-#: ../helper.php:794
+#: ../helper.php:801
 msgid "Floating Sharing Interface"
 msgstr "Interfaccia Sharing Floating"
 
-#: ../helper.php:897
+#: ../helper.php:904
 msgid "Small Avatar"
 msgstr "Avatar Piccolo"
 
-#: ../helper.php:901
+#: ../helper.php:908
 msgid "Large Avatar"
 msgstr "Avatar Grande"
 
-#: ../helper.php:905 ../admin/general_options.php:128
+#: ../helper.php:912 ../admin/general_options.php:128
 #: ../admin/social_sharing.php:1942 ../admin/social_commenting.php:479
-#: ../admin/social_login.php:1197 ../admin/like_buttons.php:822
+#: ../admin/social_login.php:1217 ../admin/like_buttons.php:822
 msgid "Save Changes"
 msgstr "Salva le modifiche"
 
-#: ../helper.php:1005
+#: ../helper.php:1012
 msgid "Click to delete social profile data"
 msgstr ""
 
-#: ../helper.php:1034
+#: ../helper.php:1041
 #, fuzzy
 msgid "Deleting"
 msgstr "Configurazioni"
 
-#: ../helper.php:1044
+#: ../helper.php:1051
 msgid "Deleted"
 msgstr ""
 
-#: ../helper.php:1046
+#: ../helper.php:1053
 msgid "Something bad happened"
 msgstr ""
 
@@ -483,14 +483,14 @@ msgstr ""
 "È possibile specificare regole CSS aggiuntive (senza &lt;style&gt; tag)"
 
 #: ../admin/general_options.php:139 ../admin/social_sharing.php:1947
-#: ../admin/social_commenting.php:484 ../admin/social_login.php:1202
+#: ../admin/social_commenting.php:484 ../admin/social_login.php:1222
 #: ../admin/like_buttons.php:827
 #, fuzzy
 msgid "Instagram Shoutout"
 msgstr "Instagram"
 
 #: ../admin/general_options.php:141 ../admin/social_sharing.php:1949
-#: ../admin/social_commenting.php:486 ../admin/social_login.php:1204
+#: ../admin/social_commenting.php:486 ../admin/social_login.php:1224
 #: ../admin/like_buttons.php:829
 msgid ""
 "If you can send (to hello@heateor.com) how our plugin is helping your "
@@ -499,7 +499,7 @@ msgid ""
 msgstr ""
 
 #: ../admin/general_options.php:142 ../admin/social_sharing.php:1950
-#: ../admin/social_commenting.php:487 ../admin/social_login.php:1205
+#: ../admin/social_commenting.php:487 ../admin/social_login.php:1225
 #: ../admin/like_buttons.php:830
 msgid ""
 "<b>Example</b> - Blah-Blah Online Coaching teaches various programming "
@@ -510,7 +510,7 @@ msgid ""
 msgstr ""
 
 #: ../admin/general_options.php:143 ../admin/social_sharing.php:1951
-#: ../admin/social_commenting.php:488 ../admin/social_login.php:1206
+#: ../admin/social_commenting.php:488 ../admin/social_login.php:1226
 #: ../admin/like_buttons.php:831
 msgid ""
 "@blahblahonlinecoaching proudly use #SuperSocializer to enable social "
@@ -651,7 +651,7 @@ msgstr "XProfile Integration"
 
 #: ../admin/social_sharing.php:52 ../admin/social_sharing.php:1870
 #: ../admin/social_sharing.php:1872 ../admin/social_login.php:41
-#: ../admin/social_login.php:1164 ../admin/like_buttons.php:47
+#: ../admin/social_login.php:1184 ../admin/like_buttons.php:47
 #: ../admin/like_buttons.php:793
 msgid "Shortcode & Widget"
 msgstr "Shortcode & Widget"
@@ -662,7 +662,7 @@ msgstr "Risoluzione dei problemi"
 
 #: ../admin/social_sharing.php:54 ../admin/social_sharing.php:1903
 #: ../admin/social_commenting.php:36 ../admin/social_commenting.php:463
-#: ../admin/social_login.php:42 ../admin/social_login.php:1178
+#: ../admin/social_login.php:42 ../admin/social_login.php:1198
 #: ../admin/like_buttons.php:48 ../admin/like_buttons.php:806
 msgid "FAQ"
 msgstr "FAQ"
@@ -1412,7 +1412,7 @@ msgstr ""
 "funzionato) e cliicca sul pulsante \"Fetch New Scrape Information\" ."
 
 #: ../admin/social_sharing.php:1905 ../admin/social_commenting.php:465
-#: ../admin/social_login.php:1180
+#: ../admin/social_login.php:1200
 msgid ""
 "<strong>Note:</strong> Plugin will not work on local server. You should have "
 "an online website for the plugin to function properly."
@@ -1452,7 +1452,7 @@ msgid ""
 msgstr ""
 
 #: ../admin/social_sharing.php:1916 ../admin/social_commenting.php:468
-#: ../admin/social_login.php:1186
+#: ../admin/social_login.php:1206
 msgid "Why is my browser blocking some features of the plugin?"
 msgstr ""
 
@@ -1817,7 +1817,7 @@ msgstr "Configurazione Avanzata"
 msgid "GDPR"
 msgstr ""
 
-#: ../admin/social_login.php:39 ../admin/social_login.php:1115
+#: ../admin/social_login.php:39 ../admin/social_login.php:1135
 msgid "XProfile Integration"
 msgstr "XProfile Integration"
 
@@ -2503,55 +2503,75 @@ msgid ""
 msgstr ""
 
 #: ../admin/social_login.php:1038
+#, fuzzy
+msgid "Placement of GDPR opt-in"
+msgstr "Abilita Disqus Commenting"
+
+#: ../admin/social_login.php:1042
+#, fuzzy
+msgid "Above Social Login icons"
+msgstr "Opzioni"
+
+#: ../admin/social_login.php:1044
+#, fuzzy
+msgid "Below Social Login icons"
+msgstr "Opzioni"
+
+#: ../admin/social_login.php:1050
+#, fuzzy
+msgid "Placement of GDPR opt-in above or below the social login icons"
+msgstr "Testo da mostrare sopra l'interfaccia Social Login"
+
+#: ../admin/social_login.php:1058
 msgid "Opt-in text"
 msgstr ""
 
-#: ../admin/social_login.php:1048
+#: ../admin/social_login.php:1068
 #, fuzzy
-msgid "Text for the opt-in appearing above the social login icons"
-msgstr "Testo da mostrare sopra l'interfaccia Social Login"
+msgid "Text for the GDPR opt-in"
+msgstr "Abilita Disqus Commenting"
 
-#: ../admin/social_login.php:1056
+#: ../admin/social_login.php:1076
 msgid "Text to link to Privacy Policy page"
 msgstr ""
 
-#: ../admin/social_login.php:1066
+#: ../admin/social_login.php:1086
 msgid "Word(s) in the opt-in text to be linked to privacy policy page"
 msgstr ""
 
-#: ../admin/social_login.php:1074
+#: ../admin/social_login.php:1094
 msgid "Privacy Policy Url"
 msgstr ""
 
-#: ../admin/social_login.php:1084
+#: ../admin/social_login.php:1104
 #, fuzzy
 msgid "Url of the privacy policy page of your website"
 msgstr "Url della homepage del tuo sito web"
 
-#: ../admin/social_login.php:1135 ../inc/widget.php:248 ../inc/widget.php:414
+#: ../admin/social_login.php:1155 ../inc/widget.php:248 ../inc/widget.php:414
 #: ../inc/widget.php:578 ../inc/widget.php:726
 msgid "Select"
 msgstr "Selezionare"
 
-#: ../admin/social_login.php:1166
+#: ../admin/social_login.php:1186
 msgid "Social Login Shortcode & Widget"
 msgstr "Shortcode & Widget"
 
-#: ../admin/social_login.php:1167
+#: ../admin/social_login.php:1187
 msgid "Social Linking Shortcode"
 msgstr "Social Linking Shortcode"
 
-#: ../admin/social_login.php:1182
+#: ../admin/social_login.php:1202
 msgid "Why is social login not working?"
 msgstr ""
 
-#: ../admin/social_login.php:1183
+#: ../admin/social_login.php:1203
 msgid ""
 "Make sure that App ID and Secret (Client ID and Secret) keys you have saved, "
 "belong to the same app"
 msgstr ""
 
-#: ../admin/social_login.php:1185
+#: ../admin/social_login.php:1205
 msgid ""
 "Why the user is not appearing logged in even after Social Login until the "
 "webpage is refreshed manually?"
@@ -2793,27 +2813,27 @@ msgstr "Domanda non valida"
 msgid "Providers not selected"
 msgstr "Providers non selezionati"
 
-#: ../inc/social_login.php:712
+#: ../inc/social_login.php:720
 msgid "Email"
 msgstr "Email"
 
-#: ../inc/social_login.php:713
+#: ../inc/social_login.php:721
 msgid "Confirm email"
 msgstr "Conferma email"
 
-#: ../inc/social_login.php:715
+#: ../inc/social_login.php:723
 msgid "Save"
 msgstr "Salva"
 
-#: ../inc/social_login.php:716
+#: ../inc/social_login.php:724
 msgid "Cancel"
 msgstr "Cancella"
 
-#: ../inc/social_login.php:790
+#: ../inc/social_login.php:798
 msgid "Email Verification"
 msgstr "Abilita verifica email"
 
-#: ../inc/social_login.php:792
+#: ../inc/social_login.php:800
 msgid ""
 "Please click on the following link or paste it in browser to verify your "
 "email"

@@ -23,8 +23,12 @@ function the_champ_login_button($widget = false){
 				}
 			}
 			$html .= '<div class="the_champ_login_container">';
+			$gdprOptIn = '';
 			if(isset($theChampLoginOptions['gdpr_enable'])){
-				$html .= '<div class="heateor_ss_sl_optin_container"><label><input type="checkbox" class="heateor_ss_social_login_optin" value="1" />'. str_replace($theChampLoginOptions['ppu_placeholder'], '<a href="'. $theChampLoginOptions['privacy_policy_url'] .'" target="_blank">'. $theChampLoginOptions['ppu_placeholder'] .'</a>', wp_strip_all_tags($theChampLoginOptions['privacy_policy_optin_text'])) .'</label></div>';
+				$gdprOptIn = '<div class="heateor_ss_sl_optin_container"><label><input type="checkbox" class="heateor_ss_social_login_optin" value="1" />'. str_replace($theChampLoginOptions['ppu_placeholder'], '<a href="'. $theChampLoginOptions['privacy_policy_url'] .'" target="_blank">'. $theChampLoginOptions['ppu_placeholder'] .'</a>', wp_strip_all_tags($theChampLoginOptions['privacy_policy_optin_text'])) .'</label></div>';
+			}
+			if(isset($theChampLoginOptions['gdpr_enable']) && $theChampLoginOptions['gdpr_placement'] == 'above'){
+				$html .= $gdprOptIn;
 			}
 			$html .= '<ul class="the_champ_login_ul">';
 			if(isset($theChampLoginOptions['providers']) && is_array($theChampLoginOptions['providers']) && count($theChampLoginOptions['providers']) > 0){
@@ -48,7 +52,12 @@ function the_champ_login_button($widget = false){
 					$html .= '<ss style="display:block" class="theChampLoginSvg theChamp'. ucfirst($provider) .'LoginSvg"></ss></i></li>';
 				}
 			}
-			$html .= '</ul></div>';
+			$html .= '</ul>';
+			if(isset($theChampLoginOptions['gdpr_enable']) && $theChampLoginOptions['gdpr_placement'] == 'below'){
+				$html .= '<div style="clear:both"></div>';
+				$html .= $gdprOptIn;
+			}
+			$html .= '</div>';
 			if(!$widget){
 				$html .= '</div><div style="clear:both; margin-bottom: 6px"></div>';
 			}

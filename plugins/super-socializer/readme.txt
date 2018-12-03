@@ -4,7 +4,7 @@ Donate link: https://www.heateor.com/donate?action=Super+Socializer
 Tags: social login, social share, social commenting, social comments, social plugin, profile data, social analytics, online identity, social profile storage, single sign-on, social media follow, facebook login, Twitch login
 Requires at least: 2.5.0
 Tested up to: 4.9.8
-Stable tag: 7.12.4
+Stable tag: 7.12.5
 License: GPLv2 or later
 
 The unique Social Plugin to let you integrate Social Login, Social Share, Social Comments and Social Media follow at your website
@@ -210,6 +210,9 @@ Yes, we can help you with it. Just drop an email at support[ at ]heateor[ dot ]c
 8. **Social Commenting**: Disqus Commenting selected
 
 == Changelog ==
+= 7.12.5 =
+* [New] Added option to control the placement of GDPR opt-in (above or below the social login icons)
+
 = 7.12.4 =
 * [Bugfix] Added TwitCount.com service to get Twitter share counts working again
 * [Improvement] Improved Chinese translation
@@ -1651,3 +1654,6 @@ Yes, we can help you with it. Just drop an email at support[ at ]heateor[ dot ]c
 = 7.12.4 =
 * [Bugfix] Added TwitCount.com service to get Twitter share counts working again
 * [Improvement] Improved Chinese translation
+
+= 7.12.5 =
+* [New] Added option to control the placement of GDPR opt-in (above or below the social login icons)
