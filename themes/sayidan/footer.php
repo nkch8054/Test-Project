@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="footer-bottom text-center">
-                <p class="copyright text-light"><?php echo esc_attr( get_theme_mod( 'sayidan_footnote', '©2016 INDIAN INSTITUTE OF MANAGEMENT RANCHI' ) ); ?></p>
+                <p class="copyright text-light"><?php echo esc_attr( get_theme_mod( 'sayidan_footnote', '©'.date('Y').' INDIAN INSTITUTE OF MANAGEMENT RANCHI' ) ); ?></p>
             </div>
         </div>
     </footer>
