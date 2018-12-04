@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="top-right col-md-9 col-sm-12 col-xs-12 pull-right">
-                        <ul class="list-inline list-inline-top">
+                        <ul class="list-inline list-inline-top">						 
                             <?php if ( get_theme_mod( 'sayidan_email' ) ) : ?>
                             <li class="hidden-xs">
                                 <a href="mailto:<?php echo esc_attr( get_theme_mod( 'sayidan_email' ) ); ?>">
@@ -70,6 +70,7 @@
                                     <button type="submit" class="lnr lnr-magnifier"></button>
                                 </form>
                             </li>
+							
                             <?php if( !is_user_logged_in() ) : ?>
                             <li class="login"> 
                                 <?php $sayidan_login_link = get_theme_mod( 'sayidan_login_link', '/login/' );
@@ -142,7 +143,8 @@
                                     <button type="submit" class="lnr lnr-magnifier"></button>
                                 </form>
                             </li>
-                            <?php if( !is_user_logged_in() ) : ?>
+							<li><a href="<?php echo home_url(); ?>">Home</a></li>
+                            <!--<?php if( !is_user_logged_in() ) : ?>
                             <li class="login"> 
                                 <?php $sayidan_login_link = get_theme_mod( 'sayidan_login_link', '/login/' );
                                 if ( empty($sayidan_login_link) || $sayidan_login_link == '' ) {
@@ -161,7 +163,7 @@
                                         <a href="<?php echo esc_url( get_theme_mod( 'sayidan_dash_link', '/profile/' ) ); ?>"><?php esc_html_e( 'Profile', 'sayidan' ); ?></a>
                                     </li>
                                 <?php endif; ?>
-                            <?php endif; ?>
+                            <?php endif; ?> -->
                         </ul>
                     </div>
                 </div>

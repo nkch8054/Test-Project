@@ -1469,7 +1469,7 @@ function wpdm_user_logged_in($msg){
  * @param string $tpldir
  * @return string
  */
-function wpdm_tpl_path($file, $tpldir = ''){
+function wpdm_tpl_path1($file, $tpldir = ''){
     if(file_exists(get_stylesheet_directory().'/download-manager/'.$file)) 
         $path = get_stylesheet_directory().'/download-manager/'.$file;
     else if(file_exists(get_template_directory().'/download-manager/'.$file))
@@ -1479,6 +1479,31 @@ function wpdm_tpl_path($file, $tpldir = ''){
     else if($tpldir !='' && file_exists(get_template_directory().'/download-manager/'.$tpldir.'/'.$file))
         $path = get_template_directory().'/download-manager/'.$tpldir.'/'.$file;
     else $path = WPDM_BASE_DIR.'tpls/'.$file;
+
+    return $path;
+
+}
+
+/**
+ * @usage Returns download manager template file path
+ * @param $file
+ * @param string $tpldir
+ * @return string
+ */
+function wpdm_tpl_path($file, $tpldir = '', $fallback = ''){
+    if(file_exists(get_stylesheet_directory().'/download-manager/'.$file))
+        $path = get_stylesheet_directory().'/download-manager/'.$file;
+    else if(file_exists(get_template_directory().'/download-manager/'.$file))
+        $path = get_template_directory().'/download-manager/'.$file;
+    else if($tpldir !='' && file_exists($tpldir.'/'.$file))
+        $path = $tpldir.'/'.$file;
+    else if($tpldir !='' && file_exists(get_template_directory().'/download-manager/'.$tpldir.'/'.$file))
+        $path = get_template_directory().'/download-manager/'.$tpldir.'/'.$file;
+    else $path = WPDM_TPL_DIR.$file;
+
+    /* Fallack template directory*/
+    if($fallback != '' && !file_exists($path))
+        $path = $fallback.$file;
 
     return $path;
 

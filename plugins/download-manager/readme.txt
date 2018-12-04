@@ -158,6 +158,10 @@ Check download stats and get a push notification when someone downloads, install
 
 == Changelog ==
 
+= 2.9.84 =
+* Updated signup and login form
+* Updated email templates
+
 = 2.9.83 =
 * Added email template editor ( option to customize all email messages and templates send from wpdm )
 

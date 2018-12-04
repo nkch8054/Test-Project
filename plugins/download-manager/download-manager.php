@@ -4,7 +4,7 @@ Plugin Name: Download Manager
 Plugin URI: https://www.wpdownloadmanager.com/purchases/
 Description: Manage, Protect and Track File Downloads from your WordPress site
 Author: Shahjada
-Version: 2.9.83
+Version: 2.9.84
 Author URI: https://www.wpdownloadmanager.com/
 Text Domain: download-manager
 Domain Path: /languages
@@ -17,7 +17,7 @@ namespace WPDM;
 if(!isset($_SESSION) && !strstr($_SERVER['REQUEST_URI'], 'wpdm-media/') && !isset($_REQUEST['wpdmdl']))
     @session_start();
 
-define('WPDM_Version','2.9.83');
+define('WPDM_Version','2.9.84');
 
 $content_dir = str_replace('\\','/',WP_CONTENT_DIR);
 
@@ -44,10 +44,7 @@ if(!defined('UPLOAD_BASE'))
 define('UPLOAD_BASE',$content_dir.'/uploads/');
 
 if(!defined('WPDM_TPL_DIR')) {
-    if((int)get_option('__wpdm_bsversion', '') === 4)
-        define('WPDM_TPL_DIR', dirname(__FILE__) . '/tpls4/');
-    else
-        define('WPDM_TPL_DIR', dirname(__FILE__) . '/tpls/');
+    define('WPDM_TPL_DIR', dirname(__FILE__) . '/tpls/');
 }
 
 include_once(dirname(__FILE__) . "/wpdm-functions.php");
@@ -240,8 +237,7 @@ class WordPressDownloadManager{
     }
 
     function registerScripts(){
-        wp_enqueue_script('jquery');
-        wp_enqueue_script('jquery-form');
+
         wp_register_style('wpdm-bootstrap', WPDM_BASE_URL . 'assets/bootstrap/css/bootstrap.css');
         wp_register_style('wpdm-font-awesome', WPDM_BASE_URL . 'assets/fontawesome/css/all.css');
 
@@ -254,6 +250,9 @@ class WordPressDownloadManager{
     function enqueueScripts()
     {
         global $post;
+
+        wp_enqueue_script('jquery');
+        wp_enqueue_script('jquery-form');
 
         $wpdmss = maybe_unserialize(get_option('__wpdm_disable_scripts', array()));
 

@@ -74,13 +74,13 @@ if(!isset($params['logo'])) $params['logo'] = get_site_icon_url();
             <?php do_action("wpdm_login_form"); ?>
             <?php do_action("login_form"); ?>
 
-            <div class="row" style="margin-bottom: 10px">
-                <div class="col-md-6"><label><input name="rememberme" type="checkbox" id="rememberme" class="wpdm-checkbox" value="forever" /> <?php _e('Remember Me','download-manager'); ?></label></div>
-                <div class="col-md-6"><small class="pull-right"><?php _e('Forgot Password?','download-manager'); ?> <a href="<?php echo site_url('/wp-login.php?action=lostpassword'); ?>"><?php _e('Request Reset','download-manager'); ?></a></small></div>
+            <div class="row login-form-meta-text text-muted" style="margin-bottom: 10px">
+                <div class="col-md-5"><label><input class="wpdm-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /><?php _e( "Remember Me" , "download-manager" ); ?></label></div>
+                <div class="col-md-7 text-right"><label><?php _e( "Forgot Password?" , "download-manager" ); ?> <a class="color-blue" href="<?php echo wpdm_lostpassword_url(); ?>"><?php _e( "Request New" , "download-manager" ); ?></a>&nbsp;</label></div>
             </div>
             <div class="form-group"><button type="submit" name="wp-submit" id="loginform-submit" class="btn btn-block btn-primary btn-lg"><i class="fa fa-key"></i> <?php _e('Login','download-manager'); ?></button></div>
             <?php if($regurl != ''){ ?>
-            <div class="text-center"><?php _e("Don't have an account yet?", "download-manager"); ?> <a href="<?php echo $regurl; ?>" name="wp-submit" class="color-purple" id="loginform-submit"><strong><?php _e('Sign Up','download-manager'); ?>.</strong></a></div>
+            <div class="text-center"><a href="<?php echo $regurl; ?>" name="wp-submit" class="btn btn-xs btn-link color-blue" id="loginform-submit"><?php _e("Don't have an account yet?", "download-manager"); ?> <?php _e('Sign Up','download-manager'); ?></a></div>
             <?php } ?>
 
 
