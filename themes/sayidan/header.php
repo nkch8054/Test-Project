@@ -138,7 +138,7 @@
                     <div class="top-right col-sm-6 col-xs-12">
                         <ul class="list-inline">
                             <li class="top-search">
-                                <form class="navbar-form search no-margin no-padding" action="/">
+                                <form class="navbar-form search no-margin no-padding" action="/iimranchi">
                                     <input type="text" name="s" class="form-control input-search" placeholder="<?php echo esc_html__( 'search...', 'sayidan' ); ?>" autocomplete="off">
                                     <button type="submit" class="lnr lnr-magnifier"></button>
                                 </form>
