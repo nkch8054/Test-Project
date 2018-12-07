@@ -2,8 +2,8 @@
 Tags: page builder, responsive, widget, widgets, builder, page, admin, gallery, content, cms, pages, post, css, layout, grid
 Requires at least: 4.4
 Tested up to: 4.9
-Stable tag: 2.9.4
-Build time: 2018-12-05T15:14:16-08:00
+Stable tag: 2.9.5
+Build time: 2018-12-06T23:34:37-08:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Donate link: https://siteorigin.com/downloads/contribution/
@@ -95,6 +95,11 @@ Page Builder is actively developed and updated, so generally I'd recommend that 
 We've tried to ensure that Page Builder is compatible with most plugin widgets. It's best to just download Page Builder and test for yourself.
 
 == Changelog ==
+
+= 2.9.5 - 6 December 2018 =
+* Layout block: Default to preview state if block has panels data.
+* Dropdown for 'Add New' with SiteOrigin Page Builder as an option.
+* Added a label to posts list to indicate which have a Page Builder layout.
 
 = 2.9.4 - 5 December 2018 =
 * Layout block: Set default state to edit mode.
