@@ -18,11 +18,11 @@
                     <div class="blog-post-content">
                         <!--Blog Post-->
                         <div class="blog-post post-content">
-                            <?php if ( has_post_thumbnail() ) : ?>
+                           <!-- <?php if ( has_post_thumbnail() ) : ?>
                             <div class="area-img">
                                <?php the_post_thumbnail('sayidan-blog', array('class' => 'img-responsive')); ?>
                             </div>
-                            <?php endif; ?>
+                            <?php endif; ?>-->
                             <div class="area-content">
                                 <h2 class="text-regular text-uppercase"><?php echo get_the_title(); ?></h2>
                                 <div class="stats">

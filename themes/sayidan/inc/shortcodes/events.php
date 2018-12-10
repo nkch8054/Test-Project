@@ -188,7 +188,7 @@ function sayidan_shortcode_events( $atts, $content = null ) {
 
 <?php elseif( $type == 'minified' ) : ?>
 
-<div class="block-event-calendar col-md-4 col-sm-12 col-xs-12">
+<div class="block-event-calendar col-md-6 col-sm-12 col-xs-12">
     <div class="column-calendar">
         <div class="title-links">
             <h3 class="heading-regular">Event Calendar</h3>
@@ -224,10 +224,7 @@ function sayidan_shortcode_events( $atts, $content = null ) {
                       $first = False; ?>
         
                       <div class="content-calendar bg-calendar no-padding">
-                        <div class="top-section">
-                            <h6 class="heading-light"><?php echo date('F Y', $time_left); ?></h6>
-                            <span class="icon calendar-icon pull-right"></span>
-                        </div>
+                        
                         <div class="list-view">
                 
                       <?php

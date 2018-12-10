@@ -83,11 +83,13 @@ function sayidan_shortcode_stories($atts, $content = null) {
     elseif( $type == 'minified' ) :
     ?>
         
-    <div class="block-news col-md-4 col-sm-12 col-xs-12">
+    <div class="block-news col-md-6 col-sm-12 col-xs-12">
         <div class="column-news">
             <div class="title-links">
-                <h3 class="heading-regular"><?php echo esc_attr( $title );?></h3>
+                <h3 class="heading-regular"><?php echo esc_attr( $title);?></h3>
             </div>
+			<div class="content-news">
+			
             <div class="post-wrapper">
                 <?php
                     $args = array(
@@ -109,11 +111,18 @@ function sayidan_shortcode_stories($atts, $content = null) {
                 
                         while ( $recentPosts->have_posts() ) : $recentPosts->the_post(); ?>
                         <div class="post-item clearfix">
-                            <div class="image-frame post-photo-wrapper">
+						
+					<div class="date-item">
+                            <span class="dates text-light"><?php echo get_the_date('D'); ?></span>
+                            <span class="day text-bold color-theme"><?php echo get_the_date('d'); ?></span>
+                            <span class="month text-light"><?php echo get_the_date('M'); ?></span>
+                        </div>
+						
+                            <!--<div class="image-frame post-photo-wrapper">
                                 <?php if  ( has_post_thumbnail() ) : ?>
                                     <a href="<?php the_permalink() ?>"> <?php the_post_thumbnail('sayidan-minified', array('class' => 'img-responsive')); ?> </a>
                                 <?php endif; ?>
-                            </div>
+                            </div>-->
                             <div class="post-desc-wrapper <?php if  ( !has_post_thumbnail() ){ echo 'post-desc-wrapper-wide'; } ?>">
                                 <div class="post-desc">
                                     <div class="post-title"><h6 class="heading-regular"><a href="<?php the_permalink() ?>"><?php echo sayidan_string_limit_words( get_the_title(), 5 ); ?></a></h6></div>
@@ -128,6 +137,7 @@ function sayidan_shortcode_stories($atts, $content = null) {
                       endif;
                       ?>
             </div>
+			</div>
             <?php if( $button_text ) : ?>
             <div class="view-all"><a href="<?php echo esc_url( $button_url ); ?>"><?php echo esc_attr( $button_text ); ?></a></div>
             <?php endif; ?>
