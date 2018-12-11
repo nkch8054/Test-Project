@@ -2199,7 +2199,7 @@ h1.page-title{  text-transform: uppercase; font-size:20pt;}
   padding: 10px;
   float: left;
   overflow-y: scroll;
-  height: 434px;
+  height: 100%;
 }
 .block-links .column-calendar .list-view .view-item {
   border-bottom: 1px solid #e9e9e9;
