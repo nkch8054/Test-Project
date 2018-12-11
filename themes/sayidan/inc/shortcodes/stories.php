@@ -112,22 +112,22 @@ function sayidan_shortcode_stories($atts, $content = null) {
                         while ( $recentPosts->have_posts() ) : $recentPosts->the_post(); ?>
                         <div class="post-item clearfix">
 						
-					<div class="date-item">
+					<!--<div class="date-item">
                             <span class="dates text-light"><?php echo get_the_date('D'); ?></span>
                             <span class="day text-bold color-theme"><?php echo get_the_date('d'); ?></span>
                             <span class="month text-light"><?php echo get_the_date('M'); ?></span>
-                        </div>
+                        </div>-->
 						
-                            <!--<div class="image-frame post-photo-wrapper">
+                            <div class="image-frame post-photo-wrapper">
                                 <?php if  ( has_post_thumbnail() ) : ?>
                                     <a href="<?php the_permalink() ?>"> <?php the_post_thumbnail('sayidan-minified', array('class' => 'img-responsive')); ?> </a>
                                 <?php endif; ?>
-                            </div>-->
+                            </div>
                             <div class="post-desc-wrapper <?php if  ( !has_post_thumbnail() ){ echo 'post-desc-wrapper-wide'; } ?>">
                                 <div class="post-desc">
-                                    <div class="post-title"><h6 class="heading-regular"><a href="<?php the_permalink() ?>"><?php echo sayidan_string_limit_words( get_the_title(), 5 ); ?></a></h6></div>
+                                    <div class="post-title"><h6 class="heading-regular"><a href="<?php the_permalink() ?>"><?php echo sayidan_string_limit_words( get_the_title(), 10 ); ?></a></h6></div>
                                     <div class="post-excerpt">
-                                        <p><?php echo sayidan_string_limit_words( get_the_excerpt(), 8 ) . '[...]';  ?></p>
+                                        <p><?php echo sayidan_string_limit_words( get_the_excerpt(), 20 ) . '[...]';  ?></p>
                                     </div>
                                 </div>
                             </div>

@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <!--Col Main-->
-                <div class="col-main col-lg-8 col-md-7 col-xs-12">
+                <div class="col-main col-lg-12 col-md-12 col-xs-12">
                     <div class="blog-post-content">
                         <!--Blog Post-->
                         <div class="blog-post post-content">

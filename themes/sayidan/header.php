@@ -137,13 +137,16 @@
                     </div>
                     <div class="top-right col-sm-6 col-xs-12">
                         <ul class="list-inline">
-                            <li class="top-search">
+                            <!--<li class="top-search">
                                 <form class="navbar-form search no-margin no-padding" action="/iimranchi">
                                     <input type="text" name="s" class="form-control input-search" placeholder="<?php echo esc_html__( 'search...', 'sayidan' ); ?>" autocomplete="off">
                                     <button type="submit" class="lnr lnr-magnifier"></button>
                                 </form>
-                            </li>
-							<li><a href="<?php echo home_url(); ?>">Home</a></li>
+                            </li>-->
+							<li style="margin:4px"><a href="<?php echo home_url(); ?>">Home</a></li>
+							<li style="margin:4px"><a href="<?php echo home_url().'/?page_id=3627'; ?>">Tender</a></li>
+							<li style="margin:4px"><a href="<?php echo home_url().'/?page_id=3633'; ?>">Swachhta Pakhwada</a></li>
+							<li style="margin:4px"><a href="<?php echo home_url().'?page_id=3635'; ?>">RTI</a></li>
                             <!--<?php if( !is_user_logged_in() ) : ?>
                             <li class="login"> 
                                 <?php $sayidan_login_link = get_theme_mod( 'sayidan_login_link', '/login/' );
@@ -199,7 +202,7 @@
                                                       'theme_location'  => 'primary',
                                                       'container'       => false,
                                                       'items_wrap'      => '%3$s',
-                                                      'depth'           => 3,
+                                                      'depth'           => 5,
                                                       ));
                                 }
                             ?>

@@ -76,7 +76,7 @@
                                 }
                             } ?>
                             <div class="login-dashboard">
-                                <!--<a href="<?php echo esc_url( $sayidan_dash_link ); ?>" class="bg-color-theme text-center text-regular"><?php esc_html_e( 'Alumni Account', 'sayidan' ); ?></a>-->
+                                <a href="<?php echo esc_url( $sayidan_dash_link ); ?>" class="bg-color-theme text-center text-regular"><?php esc_html_e( 'Alumni Account', 'sayidan' ); ?></a>
                             </div>
                             <ul class="list-inline text-center">
                                 <?php if ( get_theme_mod( 'facebook' ) ){ echo '<li><a href="' .esc_url( get_theme_mod( 'facebook' ) ). '"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>'; } ?>
